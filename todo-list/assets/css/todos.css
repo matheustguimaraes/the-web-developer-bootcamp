@@ -14,16 +14,11 @@ ul {
     padding: 0;
 }
 
-.fa-plus {
-    float: right;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     background: #2BC0E4;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 li {
@@ -31,10 +26,6 @@ li {
     height: 40px;
     line-height: 40px;
     color: #666;
-}
-
-li:nth-child(2n) {
-    background: #f7f7f7;
 }
 
 span {
@@ -49,11 +40,6 @@ span {
     opacity: 0;
 }
 
-li:hover span {
-    width: 40px;
-    opacity: 1.0;
-}
-
 input {
     font-size: 18px;
     color: #2980b9;
@@ -62,6 +48,19 @@ input {
     padding: 13px 13px 13px 20px;
     box-sizing: border-box;
     border: 3px solid rgba(0, 0, 0, 0)
+}
+
+.fa-plus {
+    float: right;
+}
+
+li:nth-child(2n) {
+    background: #f7f7f7;
+}
+
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
 }
 
 input:focus {
