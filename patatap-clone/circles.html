@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Load the Paper.js library -->
     <script type="text/javascript" src="paper-full.js"></script>
-    <!-- Define inlined PaperScript associate it with myCanvas -->
-    <link rel="stylesheet" href="circles.css" title="" type="text/css">
+    <link rel="stylesheet" href="circles.css" title="" type="text/css" />
+
     <script type="text/paperscript" canvas="myCanvas">
-      for (var x = 0; x < 1000; x += 100) {
-          for (var y = 0; y < 1000; y += 100) {
-              new Path.Circle(new Point(x, y), 10).fillColor = "yellow";
-          }
+      function onKeyDown(event) {
+          // When a key is pressed, set the content of the text item:
+          var maxPoint = new Point(view.size.width, view.size.height);
+          var randomPoint = Point.random();
+          var point = maxPoint * randomPoint;
+          console.log(maxPoint);
+
+          new Path.Circle(new Point(point), 10).fillColor = "orange";
       }
     </script>
   </head>
