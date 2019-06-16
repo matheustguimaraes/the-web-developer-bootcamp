@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Circles</title>
-    <script type="text/javascript" src="paper-full.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.28/howler.js"
-    ></script>
-    <link rel="stylesheet" type="text/css" href="circles.css" />
 
-    <script type="text/paperscript" canvas="myCanvas">
-      var keyData = {
+<head>
+	<title>Circles</title>
+	<script type="text/javascript" src="paper-full.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/1.1.28/howler.js"></script>
+	<link rel="stylesheet" type="text/css" href="circles.css" />
+
+	<script type="text/paperscript" canvas="myCanvas">
+		var keyData = {
       	q: {
       		sound: new Howl({
         		urls: ['sounds/bubbles.mp3']
@@ -190,8 +188,10 @@
       	}
       }
     </script>
-  </head>
-  <body>
-    <canvas id="myCanvas" resize></canvas>
-  </body>
+</head>
+
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+
 </html>
