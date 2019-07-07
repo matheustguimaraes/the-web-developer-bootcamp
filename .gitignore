@@ -2,3 +2,4 @@
 *.jpeg
 *.zip
 *.png
+node_modules/
