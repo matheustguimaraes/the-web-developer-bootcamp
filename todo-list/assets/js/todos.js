@@ -19,7 +19,7 @@ $("input[type='text']").keypress(function(event) {
         // create a new li and add to ul
         $("ul").append("<li><span>X</span> " + todoText + "</li>");
     }
-})
+});
 
 $('.fa-plus').click(function() {
     $("input[type='text']").fadeToggle();
